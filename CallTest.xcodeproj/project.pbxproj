@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F30F1BE17608C3500955AC4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F30F1BD17608C3500955AC4 /* Default-568h@2x.png */; };
+		0F4C984B1761CD4500544CA4 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F4C984A1761CD4500544CA4 /* libsqlite3.0.dylib */; };
 		DDE154F41577167F00EA4B80 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDE154F31577167F00EA4B80 /* UIKit.framework */; };
 		DDE154F61577167F00EA4B80 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDE154F51577167F00EA4B80 /* Foundation.framework */; };
 		DDE154F81577167F00EA4B80 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDE154F71577167F00EA4B80 /* CoreGraphics.framework */; };
@@ -15,21 +17,28 @@
 		DDE155021577167F00EA4B80 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE155011577167F00EA4B80 /* main.m */; };
 		DDE155061577167F00EA4B80 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE155051577167F00EA4B80 /* AppDelegate.m */; };
 		DDE155091577167F00EA4B80 /* CallTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DDE155071577167F00EA4B80 /* CallTest.xcdatamodeld */; };
+		DDF63D961577447F00154CC0 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF63D951577447F00154CC0 /* CoreTelephony.framework */; };
+		DDF63DAE15776C7100154CC0 /* ScriptShell in Resources */ = {isa = PBXBuildFile; fileRef = DDF63DAD15776C7100154CC0 /* ScriptShell */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F30F1BD17608C3500955AC4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		0F4C984A1761CD4500544CA4 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		DDE154EF1577167F00EA4B80 /* CallTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CallTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDE154F31577167F00EA4B80 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DDE154F51577167F00EA4B80 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DDE154F71577167F00EA4B80 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		DDE154F91577167F00EA4B80 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		DDE154FD1577167F00EA4B80 /* CallTest-Info.plist */ = {isa = PBXFileReference; path = "CallTest-Info.plist"; sourceTree = "<group>"; };
+		DDE154FD1577167F00EA4B80 /* CallTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CallTest-Info.plist"; sourceTree = "<group>"; };
 		DDE154FF1577167F00EA4B80 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DDE155011577167F00EA4B80 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DDE155031577167F00EA4B80 /* CallTest-Prefix.pch */ = {isa = PBXFileReference; path = "CallTest-Prefix.pch"; sourceTree = "<group>"; };
-		DDE155041577167F00EA4B80 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		DDE155031577167F00EA4B80 /* CallTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CallTest-Prefix.pch"; sourceTree = "<group>"; };
+		DDE155041577167F00EA4B80 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DDE155051577167F00EA4B80 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DDE155081577167F00EA4B80 /* CallTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CallTest.xcdatamodel; sourceTree = "<group>"; };
+		DDF63D951577447F00154CC0 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		DDF63DA015774D7900154CC0 /* Tiqu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tiqu.h; sourceTree = "<group>"; };
+		DDF63DAD15776C7100154CC0 /* ScriptShell */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ScriptShell; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +46,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F4C984B1761CD4500544CA4 /* libsqlite3.0.dylib in Frameworks */,
+				DDF63D961577447F00154CC0 /* CoreTelephony.framework in Frameworks */,
 				DDE154F41577167F00EA4B80 /* UIKit.framework in Frameworks */,
 				DDE154F61577167F00EA4B80 /* Foundation.framework in Frameworks */,
 				DDE154F81577167F00EA4B80 /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +61,9 @@
 		DDE154E41577167F00EA4B80 = {
 			isa = PBXGroup;
 			children = (
+				0F4C984A1761CD4500544CA4 /* libsqlite3.0.dylib */,
+				0F30F1BD17608C3500955AC4 /* Default-568h@2x.png */,
+				DDF63DAD15776C7100154CC0 /* ScriptShell */,
 				DDE154FB1577167F00EA4B80 /* CallTest */,
 				DDE154F21577167F00EA4B80 /* Frameworks */,
 				DDE154F01577167F00EA4B80 /* Products */,
@@ -67,6 +81,7 @@
 		DDE154F21577167F00EA4B80 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DDF63D951577447F00154CC0 /* CoreTelephony.framework */,
 				DDE154F31577167F00EA4B80 /* UIKit.framework */,
 				DDE154F51577167F00EA4B80 /* Foundation.framework */,
 				DDE154F71577167F00EA4B80 /* CoreGraphics.framework */,
@@ -82,6 +97,7 @@
 				DDE155051577167F00EA4B80 /* AppDelegate.m */,
 				DDE155071577167F00EA4B80 /* CallTest.xcdatamodeld */,
 				DDE154FC1577167F00EA4B80 /* Supporting Files */,
+				DDF63DA015774D7900154CC0 /* Tiqu.h */,
 			);
 			path = CallTest;
 			sourceTree = "<group>";
@@ -148,6 +164,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDE155001577167F00EA4B80 /* InfoPlist.strings in Resources */,
+				DDF63DAE15776C7100154CC0 /* ScriptShell in Resources */,
+				0F30F1BE17608C3500955AC4 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +215,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -214,7 +232,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -224,9 +242,14 @@
 		DDE1550D1577167F00EA4B80 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Headers/PrivateFrameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CallTest/CallTest-Prefix.pch";
 				INFOPLIST_FILE = "CallTest/CallTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -235,9 +258,14 @@
 		DDE1550E1577167F00EA4B80 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Headers/PrivateFrameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CallTest/CallTest-Prefix.pch";
 				INFOPLIST_FILE = "CallTest/CallTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -262,6 +290,7 @@
 				DDE1550E1577167F00EA4B80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

